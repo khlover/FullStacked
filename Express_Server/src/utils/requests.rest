@@ -1,0 +1,43 @@
+//Login / Add User
+POST http://18.116.8.86:8000/login
+Email: FrankSonatra@song.com
+Password: TwinsBasil
+#####
+
+//Logout
+//Handled client side only.
+######
+
+//Add Story
+POST http://localhost:8000/stories
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.RnJhbmtTb25hdHJhQHNvbmcuY29t.jbTmwGuNY-Zguiy7SlDHydKC5NimMjQ23lJW8ETcP8c
+story: Lorem ipsum dolor sit amet, consectetur adipiscin
+title: Loremispm
+img: misc/photo.png
+######
+
+//Get stories
+GET http://localhost:8000/stories
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.RnJhbmtTb25hdHJhQHNvbmcuY29t.jbTmwGuNY-Zguiy7SlDHydKC5NimMjQ23lJW8ETcP8c
+######
+
+//GETALL
+GET http://localhost:8000/home
+########
+
+//Get specific story
+GET http://18.116.8.86:8000/stories/20
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.RnJhbmtTb25hdHJhQHNvbmcuY29t.jbTmwGuNY-Zguiy7SlDHydKC5NimMjQ23lJW8ETcP8c
+######
+
+//Edit Story
+PUT http://localhost:8000/stories/13
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.RnJhbmtTb25hdHJhQHNvbmcuY29t.jbTmwGuNY-Zguiy7SlDHydKC5NimMjQ23lJW8ETcP8c
+Story: Vanessa was a fembot the whole time! Wait a tick, this means i'm single again, YEAH BABY YEAH!
+Title: How sad
+Img: test3
+###
+
+//Delete Story
+DELETE http://localhost:8000/stories/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.RnJhbmtTb25hdHJhQHNvbmcuY29t.jbTmwGuNY-Zguiy7SlDHydKC5NimMjQ23lJW8ETcP8c

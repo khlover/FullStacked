@@ -1,0 +1,56 @@
+#red {
+  color: red;
+  font-size: 10px;
+}
+
+input {
+  font-size: 14px;
+  color: #585757;
+  width: 290px;
+  height: 36px;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 12px;
+  color: #969696;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 40px;
+}
+
+.navTitle {
+  padding-top: 30px;
+  font-size: 32px;
+  color: #1c1c1c;
+  font-weight: 700;
+}
+
+.navButtonL {
+  width: 350px;
+  height: 30px;
+  color: #1c1c1c;
+  font-size: 14px;
+  color: white;
+  background-color: #1c1c1c;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 780px) {
+  .loginContainer {
+    align-items: center;
+  }
+
+  .navTitle {
+    margin-right: 200px;
+    margin-bottom: 20px;
+  }
+}

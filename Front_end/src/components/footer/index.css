@@ -1,0 +1,83 @@
+.Footer {
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+  padding-top: 100px;
+  margin-left: 30px;
+}
+
+.logo {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 11px;
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+.logoTitle {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  color: #585757;
+}
+
+.contact .phone {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 12.5px;
+  color: #585757;
+}
+
+.contact .mail {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 12.5px;
+  color: #585757;
+}
+
+.navDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #585757;
+  font-size: 14px;
+}
+
+.FooterTitle {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #1c1c1c;
+}
+
+.socialLogo {
+  display: flex;
+  flex-flow: row;
+  gap: 10px;
+  padding-bottom: 50px;
+}
+
+.socialLogo > img {
+  height: 16.67px;
+  width: 16.67px;
+  border: 1px solid #eeeeee;
+  padding: 13.67px;
+  margin-top: 10px;
+  border-radius: 30px 30px 30px 30px;
+}
+
+@media only screen and (min-width: 780px) {
+  .Footer {
+    flex-direction: row;
+    gap: 60px;
+  }
+}

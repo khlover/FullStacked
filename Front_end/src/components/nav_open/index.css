@@ -1,0 +1,24 @@
+.navMenuText {
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: 900;
+  color: #1c1c1c;
+}
+
+.navMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.navButton {
+  width: 271px;
+  height: 54px;
+  border-radius: 4px;
+  background-color: #1c1c1c;
+
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}

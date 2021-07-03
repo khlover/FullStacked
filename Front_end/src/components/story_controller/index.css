@@ -1,0 +1,93 @@
+.NewEdit {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.inputInfoD,
+.inputInfoT {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.tag {
+  font-size: 12px;
+  color: #969696;
+}
+
+.req {
+  font-size: 8px;
+  font-weight: 550;
+  color: red;
+  line-height: 18px;
+}
+
+.desc {
+  height: 171px;
+  width: 290px;
+  text-align: left;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+}
+
+.uploadInfo {
+  display: flex;
+  top: 25px;
+}
+
+.upload {
+  width: 80px;
+  height: 24px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 11px;
+  border: black 1px solid;
+  border-radius: 4px;
+  color: black;
+}
+
+#file {
+  display: none;
+}
+
+.image {
+  position: relative;
+  right: 14px;
+  top: 4px;
+}
+
+.submit {
+  font-size: 14px;
+  font-weight: 500;
+  width: 290px;
+  height: 36px;
+  background-color: #1c1c1c;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (min-width: 780px) {
+  .NewEdit {
+    align-items: center;
+  }
+
+  .inputInfoD {
+    margin-right: 190px;
+  }
+
+  .inputInfoT {
+    margin-right: 220px;
+  }
+
+  .uploadInfo {
+    margin-right: 190px;
+  }
+}

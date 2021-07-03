@@ -1,0 +1,56 @@
+.Dnav {
+  display: none;
+}
+
+.Nav-header {
+  color: #ffffff;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+#menu {
+  justify-self: end;
+}
+
+@media only screen and (min-width: 780px) {
+  .Nav-header {
+    display: none;
+  }
+
+  .Dnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+  .DnavMenu {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .DnavMenuText {
+    cursor: pointer;
+    font-size: 16px;
+    color: #1c1c1c;
+    font-weight: 500;
+  }
+
+  .DnavButton {
+    width: 120px;
+    height: 36px;
+    font-size: 14px;
+    color: white;
+    background-color: #1c1c1c;
+    margin: 0px;
+  }
+  .hidden {
+    display: none;
+  }
+}

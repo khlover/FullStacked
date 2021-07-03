@@ -1,0 +1,127 @@
+.active {
+  font-weight: bold;
+}
+
+.nums {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pageControl {
+  cursor: pointer;
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  border-color: #eeeeee;
+  border-width: 1px;
+  background-color: #ffffff;
+}
+
+.editDel {
+  display: flex;
+  gap: 26px;
+}
+
+.del {
+  font-family: Inter;
+  border: solid 1px red;
+  color: red;
+  background-color: white;
+}
+
+.edit {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.stacks Button {
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 12px;
+  gap: 10px;
+  font-weight: 500;
+  width: 125px;
+  height: 28px;
+  border-radius: 4px;
+  justify-content: flex-start;
+}
+
+.stacks {
+  width: 350px;
+  height: auto;
+}
+
+#home {
+  display: inline-block;
+}
+
+.Item0 {
+  display: none;
+}
+
+.Item1 {
+  display: none;
+}
+
+.Item2 {
+  display: none;
+}
+
+.Item3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1c1c1c;
+  align-self: auto;
+  height: 32px;
+  width: 310px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.Item4 {
+  font-weight: 400;
+  font-size: 12px;
+  color: #585757;
+  width: 310px;
+  overflow-wrap: break-word;
+  overflow: hidden;
+}
+
+.Item5 {
+  display: none;
+}
+
+.pictures {
+  width: 291px;
+  height: 134px;
+  padding-top: 36px;
+}
+
+@media only screen and (min-width: 780px) {
+  .stackContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Item3 {
+    font-size: 20px;
+  }
+
+  .Item4 {
+    font-size: 14px;
+    color: #585757;
+  }
+}

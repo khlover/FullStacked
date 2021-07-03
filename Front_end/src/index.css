@@ -1,0 +1,14 @@
+body {
+  margin-left: 15px;
+  margin-right: 14px;
+  font-family: Inter;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+p {
+  margin: 0px;
+}
