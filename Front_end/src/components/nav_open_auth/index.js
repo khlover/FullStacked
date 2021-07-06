@@ -1,4 +1,5 @@
 import "./index.css";
+import { Link } from "react-router-dom";
 
 export function NavAuth(props) {
   const logout = () => {
@@ -8,9 +9,17 @@ export function NavAuth(props) {
   return (
     <div>
       <div className="navMenu">
-        <p className="navMenuText">Home</p>
-        <p className="navMenuText">Add a Post</p>
-        <p className="navMenuText">My stack</p>
+        <Link to="/home" style={{ textDecoration: "none" }}>
+          <p className="navMenuText">Home</p>
+        </Link>
+
+        <Link to="/addstack" style={{ textDecoration: "none" }}>
+          <p className="navMenuText">Add a Post</p>
+        </Link>
+
+        <Link to="/mystack" style={{ textDecoration: "none" }}>
+          <p className="navMenuText">My stack</p>
+        </Link>
       </div>
 
       <button className="navButton" onClick={logout}>

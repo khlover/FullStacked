@@ -8,13 +8,17 @@ export class NavOpen extends Component {
     return (
       <div className="Nav_OPEN">
         <div className="navMenu">
-          <Link to="/home">
+          <Link to="/home" style={{ textDecoration: "none" }}>
             <p className="navMenuText">Home</p>
           </Link>
-          <p className="navMenuText">About</p>
+          <p className="navMenuText" style={{ textDecoration: "none" }}>
+            About
+          </p>
         </div>
         <Link to="/login">
-          <button className="navButton">Get Started</button>
+          <button className="navButton" style={{ textDecoration: "none" }}>
+            Get Started
+          </button>
         </Link>
       </div>
     );

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, useParams } from "react-router-dom";
 
 import Header from "../components/header";
 import Footer from "../components/footer";
@@ -53,7 +53,7 @@ class App extends Component {
             component={() => <Login onKeyChange={this.updatekey} />}
           />
           <Route
-            path="/mystack"
+            path="/mystack/"
             component={() => (
               <MyStack
                 authkey={this.state.authkey}
@@ -64,7 +64,7 @@ class App extends Component {
           />
 
           <Route
-            path="/home"
+            path="/home/"
             component={() => (
               <MyStack
                 authkey={this.state.authkey}
