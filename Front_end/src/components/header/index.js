@@ -34,22 +34,22 @@ export function Header(props) {
         </span>
 
         <div className="DnavMenu">
-          <Link to="/home">
+          <Link to="/home" style={{ textDecoration: "none" }}>
             <p className="DnavMenuText">Home</p>
           </Link>
           <p>About</p>
-          <Link to="/addstack">
+          <Link to="/addstack" style={{ textDecoration: "none" }}>
             <p className={props.auth ? "DnavMenuText" : "hidden"}>Add Post</p>
           </Link>
-          <Link to="/mystack">
+          <Link to="/mystack" style={{ textDecoration: "none" }}>
             <p className={props.auth ? "DnavMenuText" : "hidden"}>My Stack</p>
           </Link>
-          <Link to="/login">
+          <Link to="/login" style={{ textDecoration: "none" }}>
             <button className={!props.auth ? "DnavButton" : "hidden"}>
               Get Started
             </button>
           </Link>
-          <Link to="/home">
+          <Link to="/home" style={{ textDecoration: "none" }}>
             <button
               className={props.auth ? "DnavButton" : "hidden"}
               onClick={logout}

@@ -41,7 +41,7 @@ export class MyStack extends Component {
     this.state = {
       show: true,
       authkey: this.props.authkey,
-      currentPage: 1,
+      currentPage: this.props.page,
       pageCount: 0,
     };
 
@@ -95,6 +95,7 @@ export class MyStack extends Component {
     for (let x = 1; x <= this.state.pageCount; x++) {
       pageNums.push(x);
     }
+
     return (
       <div>
         {this.state.show && (
@@ -104,7 +105,7 @@ export class MyStack extends Component {
             deleteStack={this.deleteStack}
             selectStack={this.selectStack}
             passLength={this.passLength}
-            currentPage={this.state.currentPage}
+            currentPage="1"
             home={this.props.home}
           />
         )}
