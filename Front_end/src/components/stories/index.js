@@ -41,10 +41,6 @@ export class MyStack extends Component {
     this.state = {
       show: true,
       authkey: this.props.authkey,
-      del: 0,
-      refresh: false,
-      edit: this.props.edit,
-      grabview: true,
       currentPage: 1,
       pageCount: 0,
     };
@@ -101,7 +97,6 @@ export class MyStack extends Component {
     }
     return (
       <div>
-        {/* {this.state.grabview && <GetMyStack authkey={this.props.authkey} passStories={this.passStack} stack={this.state.stack} refresh={this.state.refresh} edit={this.state.edit} auth={this.props.auth} passLength={this.passLength}/>} */}
         {this.state.show && (
           <ShowStack
             authkey={this.props.authkey}
@@ -111,7 +106,6 @@ export class MyStack extends Component {
             passLength={this.passLength}
             currentPage={this.state.currentPage}
             home={this.props.home}
-            del={this.state.del}
           />
         )}
 
@@ -149,7 +143,6 @@ export class MyStack extends Component {
 
 function ShowStack(props) {
   const [getStack, setStack] = useState([]);
-  const del = props.del;
   const stack = getStack;
 
   const passStories = (story) => {
@@ -174,31 +167,32 @@ function ShowStack(props) {
   window.scrollTo(0, 0);
 
   return (
-    <div key={props.del} className="stackContainer">
-      {console.log("Refreshed")}
+    <div className="stackContainer">
       <GetMyStack
         authkey={props.authkey}
         passStories={passStories}
         passLength={passLength}
-        del={del}
         home={props.home}
       />
       {stack
         .slice((props.currentPage - 1) * 5, props.currentPage * 5)
         .map((element, index) => (
-          <div className="stacks">
+          <div className="stacks" key={index}>
             <div
               className="postinfo"
               style={{ display: !props.home ? "none" : "flex" }}
             >
-              <p classname={"userdate"}>{element[1]}</p>
-              <p classname={"userdate"}>{element[5]}</p>
+              <p className={"userdate"}>{element[1]}</p>
+              <p className={"userdate"}>{element[5]}</p>
             </div>
 
             <img src={element[2]} className="pictures" alt="userdesc"></img>
 
             {element.map((item, i) => (
-              <p className={"Item" + i}> {item} </p>
+              <p key={i} className={"Item" + i}>
+                {" "}
+                {item}{" "}
+              </p>
             ))}
 
             <button

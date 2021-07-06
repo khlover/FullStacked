@@ -7,7 +7,6 @@
 .navMenu {
   display: flex;
   flex-direction: column;
-  gap: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -15,6 +14,7 @@
 .navButton {
   width: 271px;
   height: 54px;
+  margin-left: 20px;
   border-radius: 4px;
   background-color: #1c1c1c;
 

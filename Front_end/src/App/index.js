@@ -27,8 +27,8 @@ class App extends Component {
 
   updatekey = (value) => {
     localStorage.setItem("authkey", value);
-    localStorage.setItem("auth", true);
-    this.setState({ auth: true, authkey: value });
+    localStorage.setItem("auth", !this.state.auth);
+    this.setState({ auth: !this.state.auth, authkey: value });
   };
 
   getCurrentStory = (story) => {
@@ -40,7 +40,7 @@ class App extends Component {
   render() {
     return (
       <main>
-        <Header auth={this.state.auth} />
+        <Header auth={this.state.auth} updatekey={this.updatekey} />
 
         <Switch>
           <Route
@@ -74,8 +74,16 @@ class App extends Component {
             )}
           />
 
-          <Route path="/nav" component={NavOpen} />
-          <Route path="/navauth" component={NavAuth} />
+          <Route
+            path="/nav"
+            component={() =>
+              this.state.auth ? (
+                <NavAuth updatekey={this.updatekey} />
+              ) : (
+                <NavOpen />
+              )
+            }
+          />
           <Route
             path="/addstack"
             component={() => (

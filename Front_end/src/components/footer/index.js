@@ -19,7 +19,7 @@ function Footer() {
           <img
             src="/assets/phone.png"
             alt="grey phone"
-            width
+            width="15px"
             height="13.5px"
           ></img>
           <p>8 (800) 123-45-67</p>
