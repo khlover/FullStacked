@@ -12,3 +12,10 @@ code {
 p {
   margin: 0px;
 }
+
+@media only screen and (min-width: 780px) {
+  body {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

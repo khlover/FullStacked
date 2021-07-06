@@ -10,7 +10,6 @@ export const GetMyStackCall = async (token) => {
   let tempArr = [];
 
   const result = await axios.get(baseUrl, headers).then(({ data }) => data);
-  console.log("Get Stack Called");
   let count = 0;
   const limit = Object.keys(result).length;
 
@@ -24,7 +23,7 @@ export const GetMyStackCall = async (token) => {
     tempArr[count].push(result[count].row_to_json.date);
     count++;
   }
-  console.log(tempArr);
+
   return tempArr;
 };
 export default GetMyStackCall;

@@ -10,8 +10,7 @@ export function Header(props) {
   match ? (img = "assets/close.png") : (img = "assets/menu.png");
 
   const logout = () => {
-    localStorage.setItem("auth", "");
-    localStorage.setItem("authkey", "");
+    props.updatekey(null);
   };
 
   const modechange = () => {
